@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { LinkedinIcon, ChevronDown } from "lucide-react"
+import { LinkedinIcon, GithubIcon, ChevronDown } from "lucide-react"
 import AboutSection from "@/components/about-section"
 import ExpertiseSection from "@/components/expertise-section"
 import ProjectsSection from "@/components/projects-section"
@@ -42,15 +42,26 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-white/90 italic mb-6">
               "Decoding Patterns, Designing Insights, Powering Predictions"
             </p>
-            <Link
-              href="https://www.linkedin.com/in/prerna-singhal-aia/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#0077B5] hover:bg-[#005885] text-white px-6 py-3 rounded-full transition-colors duration-300"
-            >
-              <LinkedinIcon size={20} />
-              Connect on LinkedIn
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="https://www.linkedin.com/in/prerna-singhal-aia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#0077B5] hover:bg-[#005885] text-white px-6 py-3 rounded-full transition-colors duration-300"
+              >
+                <LinkedinIcon size={20} />
+                Connect on LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/Prerna-Singhal-1997"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#24292e] hover:bg-[#1a1e22] text-white px-6 py-3 rounded-full transition-colors duration-300"
+              >
+                <GithubIcon size={20} />
+                View GitHub Profile
+              </Link>
+            </div>
           </div>
 
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -101,4 +112,3 @@ export default function Home() {
     </main>
   )
 }
-
