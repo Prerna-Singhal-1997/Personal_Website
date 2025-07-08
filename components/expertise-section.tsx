@@ -36,6 +36,16 @@ export default function ExpertiseSection() {
         "Maintained comprehensive documentation of projects and workflows, ensuring reproducibility and efficiency in analytical processes.",
       image: "/images/documentation.jpg",
     },
+    {
+      title: "Auto Rate Review",
+      description: "Conducted personal auto insurance rate reviews to ensure premium accuracy and compliance.",
+      image: "/images/auto-rate-review.jpeg",
+    },
+    {
+      title: "AI Startup Branding & Strategy",
+      description: "Assisted an AI startup with branding, marketing strategy and product development.",
+      image: "/images/ai-startup.jpeg",
+    },
   ]
 
   return (
@@ -43,11 +53,11 @@ export default function ExpertiseSection() {
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-3xl font-bold mb-12 text-center text-slate-800">Professional Expertise</h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {expertiseItems.map((item, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow h-[320px]"
+              className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow h-[280px]"
             >
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
@@ -62,9 +72,9 @@ export default function ExpertiseSection() {
               </div>
 
               {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">{item.title}</h3>
-                <p className="text-white/90">{item.description}</p>
+              <div className="relative z-10 h-full flex flex-col justify-end p-4">
+                <h3 className="text-lg font-bold mb-2 text-white">{item.title}</h3>
+                <p className="text-white/90 text-sm">{item.description}</p>
               </div>
             </div>
           ))}

@@ -59,46 +59,79 @@ export default function ProjectsSection() {
     },
   ]
 
+  const firstRowProjects = projects.slice(0, 4)
+  const secondRowProjects = projects.slice(4, 7)
+
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-purple-50 to-pink-50">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 max-w-7xl">
         <h2 className="text-3xl font-bold mb-12 text-center text-slate-800">Projects</h2>
 
-        <div className="space-y-8">
-          {projects.map((project, index) => (
+        {/* First Row - 4 Projects */}
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-8">
+          {firstRowProjects.map((project, index) => (
             <div
               key={index}
               className="bg-white border border-slate-200 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
             >
-              <div className="flex flex-col md:flex-row">
-                <div className="md:w-2/5 relative">
-                  <div className="relative h-72 md:h-full">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                </div>
-                <div className="md:w-3/5 p-6">
-                  <h3 className="text-xl font-bold mb-1 text-slate-800">{project.title}</h3>
-                  <p className="text-sm text-slate-500 mb-3">{project.date}</p>
-                  <p className="text-slate-600">{project.description}</p>
-                  {project.link && (
-                    <div className="mt-4">
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 transition-colors text-sm flex items-center gap-1"
-                      >
-                        View Project <span aria-hidden="true">→</span>
-                      </Link>
-                    </div>
-                  )}
-                </div>
+              <div className="relative h-40">
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold mb-1 text-slate-800">{project.title}</h3>
+                <p className="text-sm text-slate-500 mb-2">{project.date}</p>
+                <p className="text-slate-600 text-sm mb-3">{project.description}</p>
+                {project.link && (
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 transition-colors text-sm flex items-center gap-1"
+                  >
+                    View Project <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Second Row - 3 Projects */}
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 justify-center">
+          {secondRowProjects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white border border-slate-200 rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
+            >
+              <div className="relative h-40">
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold mb-1 text-slate-800">{project.title}</h3>
+                <p className="text-sm text-slate-500 mb-2">{project.date}</p>
+                <p className="text-slate-600 text-sm mb-3">{project.description}</p>
+                {project.link && (
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 transition-colors text-sm flex items-center gap-1"
+                  >
+                    View Project <span aria-hidden="true">→</span>
+                  </Link>
+                )}
               </div>
             </div>
           ))}

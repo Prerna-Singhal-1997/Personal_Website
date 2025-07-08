@@ -39,8 +39,7 @@ export default function EngagementsSection() {
     {
       title: "Pricing Presentations",
       description: "Delivered pricing presentations to non-technical audiences and leadership",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pricing%20Presentations.jpg-sSHj7nT3rqTiCu98Dycy942y4DeLwc.jpeg",
+      image: "/images/presentation.png",
       color: "bg-red-50",
     },
   ]

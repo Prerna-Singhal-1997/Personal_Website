@@ -4,8 +4,7 @@ import { LinkedinIcon, GithubIcon, ChevronDown } from "lucide-react"
 import AboutSection from "@/components/about-section"
 import ExpertiseSection from "@/components/expertise-section"
 import ProjectsSection from "@/components/projects-section"
-import CertificationSection from "@/components/certification-section"
-import DigitalToolkitSection from "@/components/digital-toolkit-section"
+import CertificationToolkitSection from "@/components/certification-toolkit-section"
 import EngagementsSection from "@/components/engagements-section"
 import HobbiesSection from "@/components/hobbies-section"
 
@@ -39,9 +38,7 @@ export default function Home() {
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Prerna Singhal</h1>
-            <p className="text-xl md:text-2xl text-white/90 italic mb-6">
-              "Decoding Patterns, Designing Insights, Powering Predictions"
-            </p>
+            <p className="text-xl md:text-2xl text-white/90 italic mb-6">"Actuarial at Core, Everything More"</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="https://www.linkedin.com/in/prerna-singhal-aia/"
@@ -85,14 +82,9 @@ export default function Home() {
         <ProjectsSection />
       </div>
 
-      {/* Certification Section */}
+      {/* Combined Certification and Toolkit Section */}
       <div id="certification">
-        <CertificationSection />
-      </div>
-
-      {/* Digital Toolkit Section */}
-      <div id="toolkit">
-        <DigitalToolkitSection />
+        <CertificationToolkitSection />
       </div>
 
       {/* Engagements Section */}
