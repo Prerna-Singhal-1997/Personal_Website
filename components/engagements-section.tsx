@@ -4,7 +4,7 @@ export default function EngagementsSection() {
   const engagements = [
     {
       title: "Diversity, Equity and Inclusion Committee",
-      description: "Active member helping address issues related to gender diversity & equity",
+      description: "Helped address issues related to gender diversity & equity",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Diversity%2C%20Equity%20and%20Inclusion%20Committee%20%282%29.JPEG-8uWQxrcUjbwTHpiFZ7rraMytYmcGKS.jpeg",
       color: "bg-purple-50",
