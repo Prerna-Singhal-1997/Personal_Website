@@ -12,7 +12,7 @@ export default function HobbiesSection() {
     {
       emoji: "🎨",
       title: "Art",
-      description: "I love painting, crafting, and DIY projects, turning imagination into tangible art.",
+      description: "I love painting, craft, and DIY projects, turning imagination into tangible art.",
       link: "https://drive.google.com/file/d/1G82w4SgQQBGpbsKlQekXxhoK4k1V1_e9/view?usp=drive_link",
       linkText: "See my artwork",
     },
@@ -58,10 +58,32 @@ export default function HobbiesSection() {
       linkText: "Visit my nature website",
     },
     {
-      emoji: "🎯",
-      title: "Coming Soon: New Skills",
-      description:
-        "Currently learning juggling for fun, exploring embroidery/crochet, and beginner gardening—aiming to grow my own fruits, veggies, and flowers.",
+      emoji: "🧵",
+      title: "Embroidery / Crochet",
+      description: (
+        <>
+          I've recently started exploring{" "}
+          <Link
+            href="https://drive.google.com/file/d/17pAy5VNiOantUPcx136G-vl37MAw5b26/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
+          >
+            embroidery
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="https://drive.google.com/file/d/19NgZzyGiylpcQsr2J6f8dHyRUjLSfyHq/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
+          >
+            crochet
+          </Link>
+          ; both feel incredibly meditative and fulfilling. Stitch by stitch, they help me unwind, stay creative, and
+          take mindful breaks from screens while creating something beautiful and tangible with my hands.
+        </>
+      ),
     },
   ]
 
