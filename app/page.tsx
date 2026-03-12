@@ -33,7 +33,7 @@ export default function Home() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wQttzePoIdMe1KTNmLsobRzZXSZNke.png"
                 alt="Prerna Singhal"
                 fill
-                className="object-cover object-[center_15%]"
+                className="object-cover object-[center_25%]"
                 priority
               />
             </div>
