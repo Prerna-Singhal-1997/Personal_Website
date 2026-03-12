@@ -64,7 +64,7 @@ export default function HobbiesSection() {
         <>
           I've recently started exploring{" "}
           <Link
-            href="https://drive.google.com/file/d/17pAy5VNiOantUPcx136G-vl37MAw5b26/view?usp=drive_link"
+            href="https://drive.google.com/file/d/12giSJ8jlL1ZwyTmEJEV2r9U4Z1jTCb-K/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
@@ -73,7 +73,7 @@ export default function HobbiesSection() {
           </Link>{" "}
           and{" "}
           <Link
-            href="https://drive.google.com/file/d/19NgZzyGiylpcQsr2J6f8dHyRUjLSfyHq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wGFSBp3jTxKGjzw0K5g95QceMbw0waaT/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
